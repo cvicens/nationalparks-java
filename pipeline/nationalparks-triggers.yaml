@@ -32,7 +32,7 @@ spec:
         workspaces:
         - name: app-source
           persistentVolumeClaim:
-            claimName: app-source-pvc
+            claimName: app-source-pvc-java
         - name: maven-settings
           emptyDir: {}
 ---
