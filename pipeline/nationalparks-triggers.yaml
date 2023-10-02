@@ -2,7 +2,7 @@
 apiVersion: triggers.tekton.dev/v1alpha1
 kind: TriggerTemplate
 metadata:
-  name: nationalparks
+  name: nationalparks-java
 spec:
   params:
     - name: git-revision
@@ -39,7 +39,7 @@ spec:
 apiVersion: triggers.tekton.dev/v1alpha1
 kind: TriggerBinding
 metadata:
-  name: nationalparks
+  name: nationalparks-java
 spec:
   params:
   - name: git-repo-url
@@ -68,11 +68,11 @@ metadata:
     app.kubernetes.io/managed-by: EventListener
     app.kubernetes.io/part-of: Triggers
     eventlistener: nationalparks
-  name: el-nationalparks
+  name: el-nationalparks-java
 spec:
   port:
     targetPort: http-listener
   to:
     kind: Service
-    name: el-nationalparks
+    name: el-nationalparks-java
     weight: 100
