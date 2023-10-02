@@ -17,7 +17,7 @@ spec:
       metadata:
         labels:
           tekton.dev/pipeline: nationalparks-java-pipeline
-        name: nationalparks-deploy-$(uid)
+        name: nationalparks-java-deploy-$(uid)
       spec:
         params:
           - name: APP_NAME
