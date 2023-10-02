@@ -22,7 +22,7 @@ spec:
         params:
           - name: APP_NAME
             # value: $(tt.params.git-repo-name)
-            value: nationalparks
+            value: nationalparks-java
           - name: APP_GIT_URL
             value: $(tt.params.git-repo-url)
           - name: APP_GIT_REVISION
