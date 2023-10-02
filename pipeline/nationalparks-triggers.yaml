@@ -52,14 +52,14 @@ spec:
 apiVersion: triggers.tekton.dev/v1alpha1
 kind: EventListener
 metadata:
-  name: nationalparks
+  name: nationalparks-java
 spec:
   serviceAccountName: pipeline
   triggers:
   - bindings:
-    - ref: nationalparks
+    - ref: nationalparks-java
     template:
-      ref: nationalparks
+      ref: nationalparks-java
 ---
 apiVersion: route.openshift.io/v1
 kind: Route
